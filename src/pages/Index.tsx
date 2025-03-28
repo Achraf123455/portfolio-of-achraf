@@ -1,12 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Header from '@/components/Header';
+import AboutSection from '@/components/AboutSection';
+import CVSection from '@/components/CVSection';
+import InternshipSection from '@/components/InternshipSection';
+import ProjectsSection from '@/components/ProjectsSection';
+import Footer from '@/components/Footer';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white flex flex-col">
+      <Header />
+      
+      <ScrollArea className="flex-grow">
+        <main>
+          <AboutSection />
+          <CVSection />
+          <InternshipSection />
+          <ProjectsSection />
+        </main>
+      </ScrollArea>
+      
+      <Footer />
     </div>
   );
 };
