@@ -1,17 +1,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export const Header = () => {
-  const scrollToContent = () => {
-    const aboutSection = document.getElementById('about-section');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <motion.header 
       className="w-full h-[90vh] flex flex-col justify-center items-center text-white relative overflow-hidden bg-gradient-to-b from-blue-900 to-blue-700"
@@ -19,6 +11,15 @@ export const Header = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
+      {/* Background overlay with tech image */}
+      <div className="absolute inset-0 bg-black/60">
+        <img 
+          src="/placeholder.svg" 
+          alt="Technology background"
+          className="w-full h-full object-cover mix-blend-overlay opacity-70"
+        />
+      </div>
+      
       {/* Pattern overlay */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Cpath fill=%22%23ffffff10%22 d=%22M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z%22%3E%3C/path%3E%3C/svg%3E')] opacity-20"></div>
       
@@ -44,23 +45,6 @@ export const Header = () => {
           transition={{ delay: 0.7, duration: 0.7 }}
         >
           BTS SIO option SISR
-        </motion.div>
-        
-        <motion.div
-          className="mt-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.7 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <button 
-            onClick={scrollToContent} 
-            className="text-white flex flex-col items-center opacity-80 hover:opacity-100 transition-all duration-300"
-            aria-label="Défiler vers le bas"
-          >
-            <ArrowDown className="animate-bounce w-8 h-8" />
-          </button>
         </motion.div>
       </motion.div>
     </motion.header>
