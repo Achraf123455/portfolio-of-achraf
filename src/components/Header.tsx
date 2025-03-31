@@ -12,12 +12,13 @@ export const Header = () => {
       transition={{ duration: 0.8 }}
     >
       {/* Background overlay with tech image */}
-      <div className="absolute inset-0 bg-black/60">
+      <div className="absolute inset-0">
         <img 
-          src="/placeholder.svg" 
-          alt="Technology background"
-          className="w-full h-full object-cover mix-blend-overlay opacity-70"
+          src="/lovable-uploads/2159c140-8812-4062-b16f-bab029194eb0.png" 
+          alt="Technology background with laptop and data visualizations"
+          className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       {/* Pattern overlay */}
