@@ -1,7 +1,10 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Server, Users } from 'lucide-react';
+import { Briefcase, Server, Users, FileText, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { IMAGES } from '@/constants/images';
 
 export const InternshipSection = () => {
   return (
@@ -46,6 +49,25 @@ export const InternshipSection = () => {
                 <p className="text-gray-700">Assistance technique aux utilisateurs, résolution des problèmes matériels et logiciels, maintenance préventive des postes de travail.</p>
               </div>
             </div>
+          </div>
+          
+          <Separator className="my-6" />
+          
+          <div className="flex justify-center">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="transition-all duration-300"
+            >
+              <Button 
+                className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 text-lg rounded-lg flex items-center gap-2"
+                onClick={() => window.open(IMAGES.INTERNSHIP_CERTIFICATE, "_blank")}
+              >
+                <FileText className="h-5 w-5" />
+                Voir attestation de stage
+                <ExternalLink className="h-4 w-4" />
+              </Button>
+            </motion.div>
           </div>
           
           <div className="mt-6 pt-6 border-t border-blue-100">
