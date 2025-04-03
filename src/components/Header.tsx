@@ -1,10 +1,15 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { IMAGES } from '@/constants/images';
+import { Button } from '@/components/ui/button';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 export const Header = () => {
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+
   return (
     <>
       {/* White line at the top of the page */}
@@ -24,6 +29,34 @@ export const Header = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        {/* Button to open skills chart */}
+        <div className="absolute top-4 right-4 z-20">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="secondary" className="font-medium">
+                Voir tableau de compétence
+              </Button>
+            </SheetTrigger>
+            <SheetContent className="w-full sm:max-w-4xl overflow-y-auto" side="right">
+              <div className="flex flex-col gap-4 p-2">
+                <h2 className="text-xl font-bold text-center">Tableau de compétence</h2>
+                <div className="flex flex-col gap-4">
+                  <img 
+                    src={IMAGES.SKILLS_CHART_1} 
+                    alt="Tableau de compétence 1" 
+                    className="w-full rounded-lg shadow-md"
+                  />
+                  <img 
+                    src={IMAGES.SKILLS_CHART_2} 
+                    alt="Tableau de compétence 2" 
+                    className="w-full rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
         
         {/* Pattern overlay */}
