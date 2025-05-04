@@ -22,7 +22,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
   
   const handleReportButtonClick = () => {
-    if (title === "DHCP") {
+    if (title === "DHCP" || title === "LDAP") {
       setIsDialogOpen(true);
     } else {
       window.open(reportLink, "_blank");
@@ -96,6 +96,71 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               <img 
                 src={IMAGES.DHCP_REPORT_5} 
                 alt="DHCP Report Page 5"
+                className="w-full rounded-md shadow-sm"
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
+
+      {/* LDAP Report Dialog */}
+      {title === "LDAP" && (
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="text-2xl font-bold text-center mb-4">
+                Installation et configuration d'un annuaire LDAP
+              </DialogTitle>
+            </DialogHeader>
+            <div className="flex flex-col gap-4">
+              <img 
+                src={IMAGES.LDAP_REPORT_1} 
+                alt="LDAP Report Page 1"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_2} 
+                alt="LDAP Report Page 2"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_3} 
+                alt="LDAP Report Page 3"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_4} 
+                alt="LDAP Report Page 4"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_5} 
+                alt="LDAP Report Page 5"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_6} 
+                alt="LDAP Report Page 6"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_7} 
+                alt="LDAP Report Page 7"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_8} 
+                alt="LDAP Report Page 8"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_9} 
+                alt="LDAP Report Page 9"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.LDAP_REPORT_10} 
+                alt="LDAP Report Page 10"
                 className="w-full rounded-md shadow-sm"
               />
             </div>
