@@ -22,7 +22,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
   
   const handleReportButtonClick = () => {
-    if (title === "DHCP" || title === "LDAP") {
+    if (title === "DHCP" || title === "LDAP" || title === "Deploiement Wifi") {
       setIsDialogOpen(true);
     } else {
       window.open(reportLink, "_blank");
@@ -161,6 +161,86 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               <img 
                 src={IMAGES.LDAP_REPORT_10} 
                 alt="LDAP Report Page 10"
+                className="w-full rounded-md shadow-sm"
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
+
+      {/* Deploiement Wifi Report Dialog */}
+      {title === "Deploiement Wifi" && (
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="text-2xl font-bold text-center mb-4">
+                Déploiement d'un WiFi public
+              </DialogTitle>
+            </DialogHeader>
+            <div className="flex flex-col gap-4">
+              <img 
+                src={IMAGES.WIFI_REPORT_1} 
+                alt="Wifi Report Page 1"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_2} 
+                alt="Wifi Report Page 2"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_3} 
+                alt="Wifi Report Page 3"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_4} 
+                alt="Wifi Report Page 4"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_5} 
+                alt="Wifi Report Page 5"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_6} 
+                alt="Wifi Report Page 6"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_7} 
+                alt="Wifi Report Page 7"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_8} 
+                alt="Wifi Report Page 8"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_9} 
+                alt="Wifi Report Page 9"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_10} 
+                alt="Wifi Report Page 10"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_11} 
+                alt="Wifi Report Page 11"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_12} 
+                alt="Wifi Report Page 12"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.WIFI_REPORT_13} 
+                alt="Wifi Report Page 13"
                 className="w-full rounded-md shadow-sm"
               />
             </div>

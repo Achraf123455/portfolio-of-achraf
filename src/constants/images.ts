@@ -18,5 +18,18 @@ export const IMAGES = {
   LDAP_REPORT_7: "/lovable-uploads/d5b841d7-8d1a-4537-83e0-e01a1789208e.png",
   LDAP_REPORT_8: "/lovable-uploads/25119410-e89a-47f7-96c5-8f874b2a4219.png",
   LDAP_REPORT_9: "/lovable-uploads/a9d9a561-7a35-48cc-9a64-d8c9dfeea92b.png",
-  LDAP_REPORT_10: "/lovable-uploads/8d05225b-3eec-4cc4-b299-fa5b00c4e0b7.png"
+  LDAP_REPORT_10: "/lovable-uploads/8d05225b-3eec-4cc4-b299-fa5b00c4e0b7.png",
+  WIFI_REPORT_1: "/lovable-uploads/573b0e02-ddde-4e90-b01b-941962d7b4c1.png",
+  WIFI_REPORT_2: "/lovable-uploads/914d97db-1552-4592-8abe-7507947dd856.png",
+  WIFI_REPORT_3: "/lovable-uploads/726034d9-3aac-4de1-b193-078d7639e25a.png",
+  WIFI_REPORT_4: "/lovable-uploads/b75a43cd-630b-4589-9e60-274ff2b18e1f.png",
+  WIFI_REPORT_5: "/lovable-uploads/ef49f71a-6541-4560-a00e-174d7996a51e.png",
+  WIFI_REPORT_6: "/lovable-uploads/30e08b54-a6ea-4b28-9f04-79de96bede26.png",
+  WIFI_REPORT_7: "/lovable-uploads/24fbca4d-aac6-4917-8fe0-cdb8b2757b66.png",
+  WIFI_REPORT_8: "/lovable-uploads/03f1ed77-6233-4fe6-890e-effcbf47af9c.png",
+  WIFI_REPORT_9: "/lovable-uploads/0ca6ba29-1558-4554-8075-850d0fbfc24b.png",
+  WIFI_REPORT_10: "/lovable-uploads/89e2c83e-4b7f-4cf0-b478-834ebc45380e.png",
+  WIFI_REPORT_11: "/lovable-uploads/a35743f9-c590-4b94-acd3-9a9f8bb7dff7.png",
+  WIFI_REPORT_12: "/lovable-uploads/545d710e-9cf4-4672-bb4f-c74b8a0087e1.png",
+  WIFI_REPORT_13: "/lovable-uploads/08ef07c8-8dba-45cf-bc16-a6bbcec092b8.png"
 };
