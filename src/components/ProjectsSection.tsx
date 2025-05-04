@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-import { Folder, Server, Network, Database, Cloud } from 'lucide-react';
+import { Folder, Server, Network, Database, Wifi } from 'lucide-react';
 
 export const ProjectsSection = () => {
   const projects = [
@@ -19,16 +19,16 @@ export const ProjectsSection = () => {
       icon: <Server className="h-6 w-6" />
     },
     {
-      title: "FOG",
-      description: "Implémentation de FOG (Free Open Ghost) pour le déploiement et la gestion d'images système sur plusieurs postes de travail.",
+      title: "LDAP",
+      description: "Installation et configuration d'un annuaire LDAP permettant de centraliser la gestion des utilisateurs et des groupes au sein d'une organisation.",
       reportLink: "#",
       icon: <Database className="h-6 w-6" />
     },
     {
-      title: "Active Directory",
-      description: "Configuration et administration d'un service d'annuaire Active Directory pour la gestion centralisée des utilisateurs et ressources réseau.",
+      title: "Deploiement Wifi",
+      description: "Mise en place et sécurisation d'une infrastructure réseau sans fil pour faciliter la connectivité des utilisateurs et des équipements.",
       reportLink: "#",
-      icon: <Folder className="h-6 w-6" />
+      icon: <Wifi className="h-6 w-6" />
     },
     {
       title: "Nextcloud",
