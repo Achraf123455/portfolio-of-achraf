@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { FileText, ExternalLink, BarChart2 } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { IMAGES } from '@/constants/images';
 
 export const CVSection = () => {
@@ -15,14 +16,26 @@ export const CVSection = () => {
           whileTap={{ scale: 0.95 }}
           className="shadow-lg hover:shadow-xl transition-all duration-300"
         >
-          <Button 
-            className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-8 text-xl rounded-lg flex items-center gap-4"
-            onClick={() => window.open("https://votre-lien-cv.pdf", "_blank")}
-          >
-            <FileText className="h-7 w-7" />
-            Voir mon CV
-            <ExternalLink className="h-5 w-5 ml-1" />
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button 
+                className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-8 text-xl rounded-lg flex items-center gap-4"
+              >
+                <FileText className="h-7 w-7" />
+                Voir mon CV
+                <ExternalLink className="h-5 w-5 ml-1" />
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-4xl">
+              <div className="flex justify-center">
+                <img 
+                  src={IMAGES.CV_IMAGE} 
+                  alt="Curriculum Vitae" 
+                  className="max-w-full h-auto rounded-md shadow-md"
+                />
+              </div>
+            </DialogContent>
+          </Dialog>
         </motion.div>
         
         <motion.div
