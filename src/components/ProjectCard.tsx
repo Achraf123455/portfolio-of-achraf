@@ -22,7 +22,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
   
   const handleReportButtonClick = () => {
-    if (title === "DHCP" || title === "LDAP" || title === "Deploiement Wifi") {
+    if (title === "DHCP" || title === "LDAP" || title === "Deploiement Wifi" || title === "DNS (fait en binôme)") {
       setIsDialogOpen(true);
     } else {
       window.open(reportLink, "_blank");
@@ -241,6 +241,76 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               <img 
                 src={IMAGES.WIFI_REPORT_13} 
                 alt="Wifi Report Page 13"
+                className="w-full rounded-md shadow-sm"
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
+
+      {/* DNS Report Dialog */}
+      {title === "DNS (fait en binôme)" && (
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="text-2xl font-bold text-center mb-4">
+                Mise en place d'un serveur DNS
+              </DialogTitle>
+            </DialogHeader>
+            <div className="flex flex-col gap-4">
+              <img 
+                src={IMAGES.DNS_REPORT_1} 
+                alt="DNS Report Page 1"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_2} 
+                alt="DNS Report Page 2"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_3} 
+                alt="DNS Report Page 3"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_4} 
+                alt="DNS Report Page 4"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_5} 
+                alt="DNS Report Page 5"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_6} 
+                alt="DNS Report Page 6"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_7} 
+                alt="DNS Report Page 7"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_8} 
+                alt="DNS Report Page 8"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_9} 
+                alt="DNS Report Page 9"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_10} 
+                alt="DNS Report Page 10"
+                className="w-full rounded-md shadow-sm"
+              />
+              <img 
+                src={IMAGES.DNS_REPORT_11} 
+                alt="DNS Report Page 11"
                 className="w-full rounded-md shadow-sm"
               />
             </div>

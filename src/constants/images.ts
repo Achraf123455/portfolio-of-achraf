@@ -31,5 +31,16 @@ export const IMAGES = {
   WIFI_REPORT_10: "/lovable-uploads/89e2c83e-4b7f-4cf0-b478-834ebc45380e.png",
   WIFI_REPORT_11: "/lovable-uploads/a35743f9-c590-4b94-acd3-9a9f8bb7dff7.png",
   WIFI_REPORT_12: "/lovable-uploads/545d710e-9cf4-4672-bb4f-c74b8a0087e1.png",
-  WIFI_REPORT_13: "/lovable-uploads/08ef07c8-8dba-45cf-bc16-a6bbcec092b8.png"
+  WIFI_REPORT_13: "/lovable-uploads/08ef07c8-8dba-45cf-bc16-a6bbcec092b8.png",
+  DNS_REPORT_1: "/lovable-uploads/40ac76ee-cf38-4c46-97b0-7d8421d39219.png",
+  DNS_REPORT_2: "/lovable-uploads/2c32d784-f136-4312-9c6f-71a257b6fd91.png",
+  DNS_REPORT_3: "/lovable-uploads/30827e11-b436-47c8-83f5-192f4051a4b6.png",
+  DNS_REPORT_4: "/lovable-uploads/52fbad63-3036-4c2f-93fb-e893b2425cfa.png",
+  DNS_REPORT_5: "/lovable-uploads/e3744b79-802c-4ec5-b62d-6e5d59eae32e.png",
+  DNS_REPORT_6: "/lovable-uploads/315f50e2-f09a-4108-9340-9f76554dafed.png",
+  DNS_REPORT_7: "/lovable-uploads/00154b9c-a262-4779-8d64-d9dd77048bb6.png",
+  DNS_REPORT_8: "/lovable-uploads/852e79fc-fe46-4a58-b6e6-134e468b732f.png",
+  DNS_REPORT_9: "/lovable-uploads/f0ecbda1-d9ac-40b3-99e6-22d3d4e36997.png",
+  DNS_REPORT_10: "/lovable-uploads/1dada2bc-b7e5-43ec-a2a3-aee2b0a1a66d.png",
+  DNS_REPORT_11: "/lovable-uploads/dbdb4a55-eb2b-4f58-a45d-2e9c34d96dfc.png"
 };

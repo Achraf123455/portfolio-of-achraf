@@ -7,7 +7,7 @@ import { Folder, Server, Network, Database, Wifi, Cloud } from 'lucide-react';
 export const ProjectsSection = () => {
   const projects = [
     {
-      title: "DNS",
+      title: "DNS (fait en binôme)",
       description: "Configuration et déploiement d'un serveur DNS (Domain Name System) pour résoudre les noms de domaine en adresses IP et inversement.",
       reportLink: "#",
       icon: <Network className="h-6 w-6" />
