@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-import { Folder, Server, Network, Database, Wifi } from 'lucide-react';
+import { Folder, Server, Network, Database, Wifi, Cloud } from 'lucide-react';
 
 export const ProjectsSection = () => {
   const projects = [
